@@ -1,0 +1,42 @@
+.project-header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    position: relative;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-link {
+    padding-right: 95px;
+}
+
+@media screen and (max-width: 800px) {
+    /* .company-logo {
+        padding-left: 50px;
+    } */
+    /* .nav-link {padding-right: 145px;} */
+}
+
+@media screen and (max-width: 600px) {
+    .company-logo {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .company-logo {
+        width: 35%;
+        height: auto;
+    }
+}

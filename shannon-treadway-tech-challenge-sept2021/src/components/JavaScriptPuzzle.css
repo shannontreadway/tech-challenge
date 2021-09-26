@@ -1,0 +1,8 @@
+.javascript-puzzle-container {
+    color: white;
+    margin: 10px 0;
+}
+
+.instructions, .list {
+    color: var(--light-gray);
+}

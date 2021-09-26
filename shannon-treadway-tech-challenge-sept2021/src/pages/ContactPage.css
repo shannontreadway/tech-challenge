@@ -1,0 +1,24 @@
+.contact-page-container {
+    max-width: 100%;
+    padding-left: 35px;
+}
+
+.contact-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-page-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .contact-navigation {
+        padding-left: 50px;
+        padding-right: 300px;
+    }
+}

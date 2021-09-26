@@ -1,0 +1,29 @@
+.contact-text-container {
+    width: 50%;
+}
+
+.contact-text-content {
+    position: relative;
+    color: white;
+    padding: 200px 50px 0 0;
+    text-align: justify;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-text-container {
+        width: 100%;
+    }
+    .contact-text-content {
+        padding: 100px 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact-text-content {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,10 @@
+.error404 {
+    padding-top: 200px;
+    color: var(--mid-gray);
+    text-align: center;
+    font-size: 3.75em;
+}
+
+.error-page {
+    padding: 20px 0 0 35px;
+}

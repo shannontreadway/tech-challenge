@@ -1,0 +1,17 @@
+.success-text {
+    padding-top: 125px;
+    color: var(--mid-gray);
+    text-align: center;
+    font-size: 3.75em; 
+}
+
+.success-page {
+    max-width: 100%;
+    padding: 25px 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .success-page {
+        background-color: blue;
+    }
+}
