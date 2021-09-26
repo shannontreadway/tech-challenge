@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {Link} from "react-router-dom";
 import './Navigation.css';
 
 class Navigation extends React.Component {
@@ -14,7 +15,7 @@ class Navigation extends React.Component {
                 <div className="header-container">
                     <div className="header-flex">
                         <img className="company-logo" src="/assets/Logo.png" alt="website logo" />
-                        <a className="nav-link" href={this.props.linkPath}>{this.props.linkText}</a>
+                        <Link to={this.props.linkPath}className="nav-link" >{this.props.linkText}</Link>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ body {
     color: var(--mid-gray);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* margin: 10px 20px; */
+    margin: 10px 20px;
     /* margin: 15px; */
 }
 
