@@ -4,10 +4,12 @@ let jointArray = [];
 
 function mergeArrays(...arrays) {
     let jointArray = [];
-    arrays.forEach(array => {
+    arrays.forEach((array) => {
         jointArray = [...jointArray, ...array];
     });
 
-    const uniqueArray = jointArray.filter((item,index) =>   jointArray.indexOf(item) === index);
+    const uniqueArray = jointArray.filter(
+        (item, index) => jointArray.indexOf(item) === index
+    );
     return uniqueArray;
-};
+}

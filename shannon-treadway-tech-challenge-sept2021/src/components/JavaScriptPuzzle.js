@@ -26,10 +26,9 @@ class JavaScriptPuzzle extends React.Component {
         return uniqueArray;
     };
 
-    linkClicked = () => {
+    linkClicked = (event) => {
+        event.preventDefault()
         if (this.outputListCached) {
-            // alert('This action has already been performed.');
-            // alert prevents any script from running until after the "Okay" button is clicked.  I imported sweetalerts to act as the alert.
             Swal.fire("This action has already been performed.");
             return;
         }
