@@ -20,13 +20,6 @@
     padding-right: 95px;
 }
 
-@media screen and (max-width: 800px) {
-    /* .company-logo {
-        padding-left: 50px;
-    } */
-    /* .nav-link {padding-right: 145px;} */
-}
-
 @media screen and (max-width: 600px) {
     .company-logo {
         width: 50%;

@@ -15,7 +15,7 @@ class Navigation extends React.Component {
                 <div className="header-container">
                     <div className="header-flex">
                         <img className="company-logo" src="/assets/Logo.png" alt="website logo" />
-                        <Link to={this.props.linkPath}className="nav-link" >{this.props.linkText}</Link>
+                        <Link to={this.props.linkPath} className="nav-link" >{this.props.linkText}</Link>
                     </div>
                 </div>
             </div>
