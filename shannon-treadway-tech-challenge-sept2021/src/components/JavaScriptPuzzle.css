@@ -4,16 +4,11 @@
     padding: 0 50px;
 }
 
-.instructions, .list {
+.instructions,
+.list {
     color: var(--light-gray);
 }
 
 .instructions {
     text-align: justify;
-}
-
-@media screen and (max-width: 425) {
-    .javascript-puzzle-container {
-        /* padding: 0 15px; */
-    }
 }

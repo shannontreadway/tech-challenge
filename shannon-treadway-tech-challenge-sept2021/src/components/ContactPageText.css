@@ -5,7 +5,7 @@
 .contact-text-content {
     position: relative;
     color: white;
-    padding: 200px 50px 0 0;
+    padding: 200px 50px 0 50px;
     text-align: justify;
 }
 
@@ -13,12 +13,18 @@
     font-size: 2.5rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
     .contact-text-container {
         width: 100%;
     }
     .contact-text-content {
         padding: 100px 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-text-content {
+        padding: 100px 20px 50px 20px;
     }
 }
 

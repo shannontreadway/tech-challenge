@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { BASE_URL } from "./FetchData";
 import { validate as validateEmail } from "email-validator";
-import './ContactForm.css';
+import "./ContactForm.css";
 
 class ContactForm extends React.Component {
     static propTypes = {
         history: PropTypes.object,
-    }
+    };
 
     state = {
         hasSubmitted: false,
@@ -64,7 +64,7 @@ class ContactForm extends React.Component {
         this.setState({ inputs });
     };
 
-    showErrors = (name) => 
+    showErrors = (name) =>
         this.state.hasSubmitted && !this.state.inputs[name].isValid;
 
     resetState = () => {
@@ -72,12 +72,12 @@ class ContactForm extends React.Component {
         const inputs = this.state.inputs;
 
         for (const key of Object.keys(this.state.inputs)) {
-            inputs[key] = {value: '', isValid: false}
+            inputs[key] = { value: "", isValid: false };
         }
 
-        this.setState ({ hasSubmitted, inputs });
+        this.setState({ hasSubmitted, inputs });
         console.log(this.state);
-    }
+    };
 
     submitContact = (event) => {
         event.preventDefault();
@@ -94,14 +94,16 @@ class ContactForm extends React.Component {
         };
 
         this.resetState();
-        this.props.history.push('/success');
+        this.props.history.push("/success");
 
         fetch(`${BASE_URL}/contact`, {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(contactSubmission)
-            }).then(() => {console.log('Form submitted.')})
-            return contactSubmission;
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(contactSubmission),
+        }).then(() => {
+            console.log("Form submitted.");
+        });
+        return contactSubmission;
     };
 
     render() {
@@ -117,9 +119,21 @@ class ContactForm extends React.Component {
                                     name="firstName"
                                     placeholder="First Name"
                                     onChange={this.handleChange}
-                                    className={this.showErrors("firstName") ? "error" : ""}
+                                    className={
+                                        this.showErrors("firstName")
+                                            ? "error"
+                                            : ""
+                                    }
                                 />
-                                <span className={this.showErrors("firstName") ? "show" : "hide"}>Required</span>
+                                <span
+                                    className={
+                                        this.showErrors("firstName")
+                                            ? "show"
+                                            : "hide"
+                                    }
+                                >
+                                    Required
+                                </span>
                             </div>
 
                             <div className="input-wrapper">
@@ -128,20 +142,42 @@ class ContactForm extends React.Component {
                                     name="lastName"
                                     placeholder="Last Name"
                                     onChange={this.handleChange}
-                                    className={this.showErrors("lastName") ? "error" : ""}
+                                    className={
+                                        this.showErrors("lastName")
+                                            ? "error"
+                                            : ""
+                                    }
                                 />
-                                <span className={this.showErrors("lastName") ? "show" : "hide"}>Required</span>
+                                <span
+                                    className={
+                                        this.showErrors("lastName")
+                                            ? "show"
+                                            : "hide"
+                                    }
+                                >
+                                    Required
+                                </span>
                             </div>
-                            
+
                             <div className="input-wrapper">
                                 <input
                                     type="text"
                                     name="title"
                                     placeholder="Title"
                                     onChange={this.handleChange}
-                                    className={this.showErrors("title") ? "error" : ""}
+                                    className={
+                                        this.showErrors("title") ? "error" : ""
+                                    }
                                 />
-                                <span className={this.showErrors("title") ? "show" : "hide"}>Required</span>
+                                <span
+                                    className={
+                                        this.showErrors("title")
+                                            ? "show"
+                                            : "hide"
+                                    }
+                                >
+                                    Required
+                                </span>
                             </div>
 
                             <div className="input-wrapper">
@@ -150,9 +186,19 @@ class ContactForm extends React.Component {
                                     name="email"
                                     placeholder="Email"
                                     onChange={this.handleChange}
-                                    className={this.showErrors("email") ? "error" : ""}
+                                    className={
+                                        this.showErrors("email") ? "error" : ""
+                                    }
                                 />
-                                <span className={this.showErrors("email") ? "show" : "hide"}>Required</span>
+                                <span
+                                    className={
+                                        this.showErrors("email")
+                                            ? "show"
+                                            : "hide"
+                                    }
+                                >
+                                    Required
+                                </span>
                             </div>
 
                             <div className="textarea-wrapper">
@@ -161,9 +207,21 @@ class ContactForm extends React.Component {
                                     placeholder="Message"
                                     onChange={this.handleChange}
                                     rows="7"
-                                    className={this.showErrors("message") ? "error" : ""}
+                                    className={
+                                        this.showErrors("message")
+                                            ? "error"
+                                            : ""
+                                    }
                                 />
-                                <span className={this.showErrors("message") ? "show" : "hide"}>Required</span>
+                                <span
+                                    className={
+                                        this.showErrors("message")
+                                            ? "show"
+                                            : "hide"
+                                    }
+                                >
+                                    Required
+                                </span>
                             </div>
                         </div>
                         <div className="submit-btn-container">

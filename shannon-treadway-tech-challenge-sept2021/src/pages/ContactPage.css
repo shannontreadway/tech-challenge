@@ -1,6 +1,5 @@
 .contact-page-container {
     width: 100%;
-    padding-left: 35px;
 }
 
 .contact-page-content {
@@ -9,16 +8,21 @@
     justify-content: space-between;
     align-items: stretch;
     height: 100vh;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px) {
+.contact-navigation {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 830px) {
     .contact-page-content {
         flex-direction: column;
         justify-content: flex-start;
     }
 
-    .contact-navigation {
+    /* .contact-navigation {
         padding-left: 50px;
         padding-right: 300px;
-    }
+    } */
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import Swal from 'sweetalert2';
-import './JavaScriptPuzzle.css';
+import Swal from "sweetalert2";
+import "./JavaScriptPuzzle.css";
 
 class JavaScriptPuzzle extends React.Component {
     arrA = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm"];
@@ -30,7 +30,7 @@ class JavaScriptPuzzle extends React.Component {
         if (this.outputListCached) {
             // alert('This action has already been performed.');
             // alert prevents any script from running until after the "Okay" button is clicked.  I imported sweetalerts to act as the alert.
-            Swal.fire('This action has already been performed.')
+            Swal.fire("This action has already been performed.");
             return;
         }
         const jointArray = this.mergeArrays(this.arrA, this.arrB);
@@ -48,9 +48,11 @@ class JavaScriptPuzzle extends React.Component {
                 <p className="instructions">
                     Remove the duplicates in 2 Javascript objects and output the
                     list of distinct names in an unordered list when{" "}
-                    <a href="/#" onClick={this.linkClicked}>this link</a> is clicked. If
-                    the operation has been completed already notify the user
-                    that this has already been done.
+                    <a href="/#" onClick={this.linkClicked}>
+                        this link
+                    </a>{" "}
+                    is clicked. If the operation has been completed already
+                    notify the user that this has already been done.
                 </p>
                 <ul className="list">
                     {this.state.jointArray.map((item, i) => (

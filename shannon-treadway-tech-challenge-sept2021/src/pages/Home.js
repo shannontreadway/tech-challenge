@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import TileContents from "../components/TileContents";
 import JavaScriptPuzzle from "../components/JavaScriptPuzzle";
-import './Home.css';
+import "./Home.css";
 import { fetchData } from "../components/FetchData";
 
 class Home extends React.Component {
@@ -30,7 +30,10 @@ class Home extends React.Component {
         if (isLoaded) {
             return (
                 <div className="home-page-container">
-                    <Navigation linkText="Contact" linkPath="/contact"></Navigation>
+                    <Navigation
+                        linkText="Contact"
+                        linkPath="/contact"
+                    ></Navigation>
                     <div className="tile-set">
                         {apiData.map((data, index) => (
                             <TileContents

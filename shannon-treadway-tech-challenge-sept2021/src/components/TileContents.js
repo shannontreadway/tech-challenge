@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
-import './TileContents.css';
+import "./TileContents.css";
 
 class TileContents extends React.Component {
     static propTypes = {
@@ -14,7 +14,11 @@ class TileContents extends React.Component {
             <div className="heading-two-tile">
                 <div className="tile-text">
                     <div className="tile-image-container">
-                        <img className="img" src={this.props.image} alt=""></img>
+                        <img
+                            className="img"
+                            src={this.props.image}
+                            alt=""
+                        ></img>
                     </div>
                     <h2>{this.props.title}</h2>
                     <p className="justified-text">{this.props.paragraph}</p>
@@ -23,7 +27,7 @@ class TileContents extends React.Component {
                     <button className="btn">Learn More</button>
                 </div>
             </div>
-        )
+        );
     }
 }
 

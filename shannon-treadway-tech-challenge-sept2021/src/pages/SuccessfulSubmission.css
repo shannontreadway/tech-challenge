@@ -2,10 +2,34 @@
     padding-top: 125px;
     color: var(--mid-gray);
     text-align: center;
-    font-size: 3.75em; 
+    font-size: 3.75em;
 }
 
 .success-page {
     max-width: 100%;
     padding: 25px 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .success-text {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .success-text {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .success-text {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .success-text {
+        font-size: 1.5em;
+    }
 }

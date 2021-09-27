@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import './ContactPageText.css';
+import "./ContactPageText.css";
 
 class ContactPageText extends React.Component {
     static propTypes = {
