@@ -11,3 +11,9 @@
 .instructions {
     text-align: justify;
 }
+
+@media screen and (max-width: 425) {
+    .javascript-puzzle-container {
+        /* padding: 0 15px; */
+    }
+}

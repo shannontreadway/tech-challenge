@@ -32,6 +32,12 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .nav-link {
+        padding-right: 52px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .company-logo {
         width: 35%;
@@ -40,5 +46,15 @@
 
     .nav-link {
         padding-right: 52px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .company-logo {
+        padding-left: 10px;
+    }
+
+    .nav-link {
+        padding-right: 25px;
     }
 }
