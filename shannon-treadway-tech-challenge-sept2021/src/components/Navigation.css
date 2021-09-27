@@ -1,11 +1,14 @@
 .project-header {
     position: absolute;
     z-index: 10;
-    width: 95%;
+    width: 100vw;
+    left: 0;
+    /* padding-left: 60px; */
+
 }
 
 .header-container {
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 
@@ -18,6 +21,10 @@
 
 .nav-link {
     padding-right: 95px;
+}
+
+.company-logo {
+    padding-left: 60px;
 }
 
 @media screen and (max-width: 600px) {

@@ -14,7 +14,7 @@ class TileContents extends React.Component {
             <div className="heading-two-tile">
                 <div className="tile-text">
                     <div className="tile-image-container">
-                        <img className="img" src={this.props.image}></img>
+                        <img className="img" src={this.props.image} alt=""></img>
                     </div>
                     <h2>{this.props.title}</h2>
                     <p className="justified-text">{this.props.paragraph}</p>
