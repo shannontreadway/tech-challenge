@@ -96,12 +96,12 @@ class ContactForm extends React.Component {
         this.resetState();
         this.props.history.push('/success');
 
-        // fetch(`${BASE_URL}/contact`, {
-        //         method: 'POST',
-        //         headers: {'Content-Type': 'application/json'},
-        //         body: JSON.stringify(contactSubmission)
-        //     }).then(() => {console.log('Form submitted.')})
-        //     return contactSubmission;
+        fetch(`${BASE_URL}/contact`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(contactSubmission)
+            }).then(() => {console.log('Form submitted.')})
+            return contactSubmission;
     };
 
     render() {
