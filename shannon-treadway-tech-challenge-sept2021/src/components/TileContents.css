@@ -47,3 +47,13 @@
         flex: 1;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .heading-two-tile {
+        padding: 2.5rem 1rem;
+        flex: none;
+    }
+    .tile-text {
+        padding-left: 0 20px;
+    }
+}

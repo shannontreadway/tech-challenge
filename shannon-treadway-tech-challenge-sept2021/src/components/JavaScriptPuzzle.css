@@ -1,8 +1,13 @@
 .javascript-puzzle-container {
     color: white;
     margin: 10px 0;
+    padding: 0 50px;
 }
 
 .instructions, .list {
     color: var(--light-gray);
+}
+
+.instructions {
+    text-align: justify;
 }

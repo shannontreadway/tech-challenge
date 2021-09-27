@@ -1,16 +1,15 @@
+.home-page-container {
+    max-width: 100%;
+}
+
 .tile-set {
-    padding: 140px 0 65px 0;
+    padding: 140px 50px 65px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     gap: 15px;
-}
-
-.home-page-container {
-    max-width: 100%;
-    padding: 25px 40px;
-}
+}    
 
 @media screen and (max-width: 1100px) {
     .tile-set {
@@ -26,6 +25,15 @@
         justify-content: stretch;
         align-content: center;
         padding-top: 100px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tile-set {
+        justify-content: stretch;
+        align-content: center;
+        padding-top: 75px;
         padding-bottom: 20px;
     }
 }
