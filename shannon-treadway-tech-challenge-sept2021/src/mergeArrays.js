@@ -1,8 +1,4 @@
-const arrA = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm"];
-const arrB = ["Matt Johnson", "Bart Paden", "Jordan Heigle", "Tyler Viles"];
-let jointArray = [];
-
-function mergeArrays(...arrays) {
+export function mergeArrays(...arrays) {
     let jointArray = [];
     arrays.forEach((array) => {
         jointArray = [...jointArray, ...array];

@@ -1,6 +1,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 import "./JavaScriptPuzzle.css";
+import {mergeArrays} from '../mergeArrays';
 
 class JavaScriptPuzzle extends React.Component {
     arrA = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm"];
@@ -11,29 +12,13 @@ class JavaScriptPuzzle extends React.Component {
         jointArray: [],
     };
 
-    mergeArrays = (...arrays) => {
-        let jointArray = [];
-        arrays.forEach((array) => {
-            jointArray = [...jointArray, ...array];
-        });
-        return jointArray;
-    };
-
-    removeDuplicates = (array) => {
-        const uniqueArray = array.filter(
-            (item, index) => array.indexOf(item) === index
-        );
-        return uniqueArray;
-    };
-
     linkClicked = (event) => {
         event.preventDefault()
         if (this.outputListCached) {
             Swal.fire("This action has already been performed.");
             return;
         }
-        const jointArray = this.mergeArrays(this.arrA, this.arrB);
-        const uniqueArray = this.removeDuplicates(jointArray);
+        const uniqueArray = mergeArrays(this.arrA, this.arrB)
         this.setState({ jointArray: uniqueArray });
         this.outputListCached = true;
     };
